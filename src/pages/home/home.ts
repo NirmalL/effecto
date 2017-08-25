@@ -11,7 +11,7 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 })
 export class HomePage {
 
-  imageData:any;
+  base64Data:any;
 
   constructor(
     public navCtrl: NavController,
@@ -32,8 +32,8 @@ export class HomePage {
     this.camera.getPicture(options).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64:
-     let base64Data = 'data:image/jpeg;base64,' + imageData;
-     this.base64ToGallery.base64ToGallery(base64Data, { prefix: '_img' }).then(
+     this.base64Data = 'data:image/jpeg;base64,' + imageData;
+     this.base64ToGallery.base64ToGallery(this.base64Data, { prefix: '_img' }).then(
       res => console.log('Saved image to gallery ', res),
       err => console.log('Error saving image to gallery ', err)
     );
