@@ -8,11 +8,15 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
+  <!-- <h3>Ionic Menu Starter</h3>
+  <ion-item> -->
+ 
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+    Take your damn pic
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button secondary color="primary" type="button" (click)="takeAndSavePic()">Snap!</button>
+
+  <!-- <ion-icon *ngIf="imageData" style="color:green;padding:6px" ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>  -->
+
 </ion-content>

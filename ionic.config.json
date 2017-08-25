@@ -1,5 +1,8 @@
 {
   "name": "effecto",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "a85678e8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
